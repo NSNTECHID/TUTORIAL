@@ -99,6 +99,7 @@ proxies:
       headers:
         Host: id2vless.ipservers.xyz
     udp: true
+    
 proxy-groups:
   - name: ID-X
     type: fallback
@@ -109,7 +110,7 @@ proxy-groups:
       - "[Trojan] sg4.6n6.net 3"
       - jagoanssh-wqergwe 2
       - jagoanssh-sdfsdfsd
-      - jagoanssh-ytyrtrge   
+      - jagoanssh-ytyrtrge
   - name: MIX-X
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -119,7 +120,7 @@ proxy-groups:
       - "[Trojan] sg4.6n6.net 3"
       - jagoanssh-wqergwe 2
       - jagoanssh-sdfsdfsd
-      - jagoanssh-ytyrtrge  
+      - jagoanssh-ytyrtrge
       
   - name: IKLAN
     type: select

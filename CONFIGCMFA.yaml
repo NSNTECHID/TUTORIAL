@@ -84,7 +84,21 @@ proxies:
       headers:
         Host: id1vless.ipservers.xyz
     udp: true
-
+  - name: jagoanssh-ytyrtrge
+    server: bug.com
+    port: 443
+    type: vless
+    uuid: aae98731-898a-4cd3-8c7f-d09af2387d63
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id2vless.ipservers.xyz
+    network: ws
+    ws-opts:
+      path: /jagoanssh
+      headers:
+        Host: id2vless.ipservers.xyz
+    udp: true
 proxy-groups:
   - name: ID-X
     type: fallback
@@ -95,7 +109,7 @@ proxy-groups:
       - "[Trojan] sg4.6n6.net 3"
       - jagoanssh-wqergwe 2
       - jagoanssh-sdfsdfsd
-      
+      - jagoanssh-ytyrtrge   
   - name: MIX-X
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -105,7 +119,7 @@ proxy-groups:
       - "[Trojan] sg4.6n6.net 3"
       - jagoanssh-wqergwe 2
       - jagoanssh-sdfsdfsd
-
+      - jagoanssh-ytyrtrge  
       
   - name: IKLAN
     type: select

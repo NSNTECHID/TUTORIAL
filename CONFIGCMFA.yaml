@@ -53,7 +53,37 @@ proxies:
       headers:
         Host: sg4.6n6.net
     udp: true
-
+  - name: jagoanssh-wqergwe 2
+    server: quiz.int.vidio.com
+    port: 80
+    type: vmess
+    uuid: 396415b0-6f7d-4df3-9d50-1a3ff9115b1a
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: id2-ray.ipservers.xyz
+    network: ws
+    ws-opts:
+      path: /JAGOANSSH/
+      headers:
+        Host: id2-ray.ipservers.xyz
+    udp: true
+  - name: jagoanssh-sdfsdfsd
+    server: quiz.int.vidio.com
+    port: 443
+    type: vless
+    uuid: 9cf9a9b0-2e2e-45bd-ac6f-5eaa44e30cfe
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: id1vless.ipservers.xyz
+    network: ws
+    ws-opts:
+      path: /jagoanssh
+      headers:
+        Host: id1vless.ipservers.xyz
+    udp: true
 
 proxy-groups:
   - name: ID-X
@@ -63,7 +93,9 @@ proxy-groups:
     proxies:
       - "[Trojan] 🇸🇬 sg4.6n6.net"
       - "[Trojan] sg4.6n6.net 3"
-
+      - jagoanssh-wqergwe 2
+      - jagoanssh-sdfsdfsd
+      
   - name: MIX-X
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -71,7 +103,10 @@ proxy-groups:
     proxies:
       - "[Trojan] 🇸🇬 sg4.6n6.net"
       - "[Trojan] sg4.6n6.net 3"
+      - jagoanssh-wqergwe 2
+      - jagoanssh-sdfsdfsd
 
+      
   - name: IKLAN
     type: select
     proxies:

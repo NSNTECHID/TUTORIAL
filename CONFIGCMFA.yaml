@@ -33,7 +33,7 @@ dns:
     - 112.215.203.254
 proxies:
   - name: "[Trojan] 🇸🇬 sg4.6n6.net"
-    server: bug.com
+    server: quiz.int.vidio.com
     port: 443
     type: trojan
     password: 5de80480-ce5d-11ef-b2c4-1239d0255272
@@ -41,7 +41,7 @@ proxies:
     sni: sg4.6n6.net
     udp: true
   - name: "[Trojan] sg4.6n6.net 3"
-    server: bug.com
+    server: quiz.int.vidio.com
     port: 443
     type: trojan
     password: 5de80480-ce5d-11ef-b2c4-1239d0255272
